@@ -1,64 +1,40 @@
 body {
-  margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+  margin: 0;
+  padding: 0;
+  background-color: #ef97ed; /* Light gray background */
+  font-family: 'Helvetica', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-body::before {
-  content: "XS";
-  color: red;
-  font-size: 2rem;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-  background-image: linear-gradient(lightblue,lightpink);
-  border: 1px solid black;
+.mainContainer {
+  text-align: center;
+  background-color: #61dde6; /* White background */
   border-radius: 10px;
-  min-height: 50px;
-  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  padding: 20px;
+  max-width: 400px; /* Limit the width of the container */
 }
 
-.box2{
-  background-image: linear-gradient(white,white);
+.quote {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+  margin-bottom: 10px;
+  background-color: green;
 }
 
-@media (min-width: 576px) {
-  body::before {
-    content: "SM";
-  }
+.author {
+  display: flex;
+  justify-content: flex-end;
+  background-color: red;
+  font-style: italic;
+  justify-self: flex-end;
+  color: #666; /* Slightly lighter gray text color */
 }
 
-@media (min-width: 768px) {
-  body::before {
-    content: "MD";
-  }
+button{
+  margin-top: 20px;
 }
-
-@media (min-width: 992px) {
-  body::before {
-    content: "LG";
-  }
-}
-
-@media (min-width: 1200px) {
-  body::before {
-    content: "XL";
-  }
-}
-
-@media (min-width: 1400px) {
-  body::before {
-    content: "XXL";
-  }
-}
-
-
-
-
-
-
-
-
